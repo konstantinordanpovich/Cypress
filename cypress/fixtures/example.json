@@ -1,0 +1,7 @@
+{
+  "name": "Cypress Name",
+  "email": "hello@cypress.io",
+  "body": {
+    "fixtures": "fixture/n"
+  }
+}
