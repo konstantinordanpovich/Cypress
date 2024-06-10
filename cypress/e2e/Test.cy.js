@@ -52,4 +52,4 @@ describe('template spec', () => {
       expect(file.body.fixture).to.eq("fixture")
     })
 })
-  })
+})
