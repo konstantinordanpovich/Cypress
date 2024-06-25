@@ -6,7 +6,7 @@ describe('template spec', () => {
   })
 
   it('Multiply Test Cases', () => {
-    let a = 1 + 2
+    let a = [1 + 2]
     expect(a).to.be.eq(3)
   })
 
@@ -51,5 +51,14 @@ describe('template spec', () => {
       expect(file.name).to.eq("Cypress Name")
       expect(file.body.fixture).to.eq("fixture")
     })
+})
+it('Object test cases 2', () => {
+  cy.fixture('example').then(file => {
+    const {name, email, body,} = file
+      expect(name).to.eq(file.name)
+      expect(email).to.eq(file.email)
+      expect(body).to.eq(body)
+      expect(body.fixture).to.eq(file.body.fixture)
+  })
 })
 })
