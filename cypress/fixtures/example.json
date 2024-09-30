@@ -2,6 +2,11 @@
   "name": "Cypress Name",
   "email": "hello@cypress.io",
   "body": {
-    "fixtures": "fixture/n"
-  }
+    "fixtures": [{
+      "tag":1
+    },
+    {"tag2": 2}
+    ]
+  },
+  "isValid": "true"
 }
