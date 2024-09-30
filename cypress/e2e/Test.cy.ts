@@ -1,23 +1,4 @@
-type exampleResponse = {
-  name: string,
-  email: string,
-  body: {
-    fixtures: any[]
-  }
-}
-
-type responseData =  exampleResponse & {
-  isValid: true
-}
-
-interface object1 {
-  body: object
-}
-
-interface object2 {
-  name: string[]
-  email: string
-}
+import { exampleResponse, responseData,object2  } from "./types" 
 
 const mockData: responseData = {
   "body": {
@@ -33,7 +14,6 @@ const mockData: responseData = {
 interface object3 extends  object2 {
   isValid: boolean
 }
-
 
 describe('template spec', () => {
 
