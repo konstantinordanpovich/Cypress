@@ -11,7 +11,7 @@ const mockData: responseData = {
     "email": "hello@cypress.io",
 }
 
-interface object3 extends  object2 {
+interface object3 implements  object2 {
   isValid: boolean
 }
 
